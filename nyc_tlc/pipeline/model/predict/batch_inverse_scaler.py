@@ -24,7 +24,7 @@ MODEL_DIR = "nyc_tlc_tip_amount"
         Column('predicted_tip_amount', Decimal(13,2), "Predicted Tip Amount")
     )
 )
-def batch_inverse_scaler(data, run_id="11d4b6c8e1014fccad07090489707c77"):    
+def batch_inverse_scaler(data, run_id="29bc319133ee4d1f8926489c1939644a"):    
 
     scaler = None
     with open(f"/dbfs/ml/models/{MODEL_DIR}/{run_id}/artifacts/random_forest/artifacts/scaler.pkl", "rb") as f:

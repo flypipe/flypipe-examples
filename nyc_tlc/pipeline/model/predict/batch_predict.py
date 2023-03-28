@@ -20,7 +20,7 @@ from nyc_tlc.pipeline.model.data import data
         Column('scaled_predicted_tip_amount', Double(), "Predicted tip amount (scaled)"),
     )
 )
-def batch_predict(spark, data, run_id="11d4b6c8e1014fccad07090489707c77"):
+def batch_predict(spark, data, run_id="29bc319133ee4d1f8926489c1939644a"):
     
     logged_model = f'runs:/{run_id}/random_forest'
     
