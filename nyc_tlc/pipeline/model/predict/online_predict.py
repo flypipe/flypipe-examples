@@ -23,7 +23,7 @@ MODEL_DIR = "nyc_tlc_tip_amount"
         Column('scaled_predicted_tip_amount', Double(), "Predicted tip amount (scaled)"),
     )
 )
-def online_predict(data, run_id="11d4b6c8e1014fccad07090489707c77"):
+def online_predict(data, run_id="29bc319133ee4d1f8926489c1939644a"):
     
     
     logged_model = f'runs:/{run_id}/random_forest'
