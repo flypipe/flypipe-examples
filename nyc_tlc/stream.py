@@ -87,7 +87,7 @@ version = int(time() * 1000)
     .writeStream
     .option("txnVersion", version)
     .option("txnAppId", app_id)
-    # .trigger(availableNow=True) #Uncomment if needs to run only once
+    .trigger(availableNow=True) #Comment for continuous processing
     .option("checkpointLocation", "dbfs:/tmp/streaming/checkpoints/nyc_tlc")
     .foreachBatch(transform)
     .start()
